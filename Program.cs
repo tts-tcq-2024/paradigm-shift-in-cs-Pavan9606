@@ -3,7 +3,7 @@ using System;
 
 namespace paradigm_shift_csharp
 {
-class Main
+class Program
 {
    public static void Main()
     {
