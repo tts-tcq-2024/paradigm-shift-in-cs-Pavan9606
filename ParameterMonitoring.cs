@@ -50,19 +50,19 @@ namespace paradigm_shift_csharp
         _value = input;
     }
 
-    //public void ConfigureWarning(bool input)
-    //{
-    //    _warning = input;
-    //}
+    public void ConfigureWarning(bool input)
+    {
+        _warning = input;
+    }
 
-    //public bool IsLow()
-    //{
-    //    return _warning && ParameterUtils.IsInRange(_value, _min + 0.01f, _min + _tolerance);
-    //}
+    public bool IsLow()
+    {
+     return _warning && ParameterUtils.IsInRange(_value, _min + 0.01f, _min + _tolerance);
+    }
 
-    //public bool IsHigh()
-    //{
-    //    return _warning && ParameterUtils.IsInRange(_value, _max - _tolerance + 0.01f, _max);
-    //}
+    public bool IsHigh()
+    {
+        return _warning && ParameterUtils.IsInRange(_value, _max - _tolerance + 0.01f, _max);
+    }
 }
 }
